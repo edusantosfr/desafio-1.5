@@ -12,6 +12,7 @@ public class Matricula {
     private LocalDate dataMatricula;
 
     @ManyToOne
+    @JoinColumn(name = "curso_id")
     private Curso curso;
 
     @OneToOne
